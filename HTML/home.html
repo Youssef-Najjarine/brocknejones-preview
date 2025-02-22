@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>brocknejones</title>
+    <link rel="stylesheet" href="../CSS/home.css"/>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="nav-link">brocknejones</a>
+    </nav>
+    <section class="demo no-padding-bottom">
+        <div class="container">
+            <ul class="screens clearfix">
+                <!-- Dropdown for Brockne Speaks -->
+                <li class="bounceIn animate-it animated" data-delay="100">
+                    <a><img src="../Images/Brock.jpeg" alt=""></a>
+                    <div>
+                        <select name="brockne-options" onchange="redirectToPage(this)">
+                            <option value="" disabled selected>Brockne Speaks</option>
+                            <option value="brocknejones-speaks-1.html">Template 1</option>
+                            <option value="brocknejones-speaks-2.html">Template 2</option>
+                            <option value="brocknejones-speaks-3.html">Template 3</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="bounceIn animate-it animated" data-delay="100">
+                    <a><img src="../Images/home-music.webp" alt=""></a>
+                    <div>
+                        <select name="asaintmusic-options" onchange="redirectToPage(this)">
+                            <option value="" disabled selected>asaintmusic</option>
+                            <option value="asaintmusic-1.html">Template 1</option>
+                            <option value="asaintmusic-2.html">Template 2</option>
+                            <option value="asaintmusic-3.html">Template 3</option>
+                        </select>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- JavaScript for Redirection -->
+    <script>
+        function redirectToPage(selectElement) {
+            const selectedValue = selectElement.value;
+            if (selectedValue) {
+                window.open(selectedValue, '_blank'); // Opens the selected page in a new tab
+            }
+        }
+    </script>
+</body>
+</html>
