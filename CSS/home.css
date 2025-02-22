@@ -75,8 +75,8 @@ a {
 
 .screens li img {
     margin: 0 0 20px 0;
-    width: 809px;
-    height: 809px;
+    width: 650px;
+    height: 650px;
     border-radius: 10px;
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     -webkit-transition-duration: 1.0s;
