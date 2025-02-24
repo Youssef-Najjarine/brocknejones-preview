@@ -3,10 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>asaintmusic Template 2</title>
-    <link rel="stylesheet" href="../CSS/asaintmusic-2.css"/>
+    <title>Asaint Music</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #1e1a1a, #a87c4f);
+            color: #f5d28e;
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        nav {
+            padding: 15px;
+            background: #4a3215;
+        }
+        nav a {
+            color: #f5d28e;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffd700;
+        }
+        .hero {
+            background: url('../Images/music-2.jpeg') no-repeat center center/cover;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .hero-text {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px 40px;
+            border-radius: 10px;
+            font-size: 36px;
+            font-weight: bold;
+            color: #f5d28e;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+    </style>
 </head>
 <body>
-    <h1>asaintmusic Template 2</h1>
+    <header>Asaint Music</header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Gallery</a>
+        <a href="#">Music</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="hero">
+        <div class="hero-text">Experience the Elegance of Sound</div>
+    </div>
 </body>
 </html>
