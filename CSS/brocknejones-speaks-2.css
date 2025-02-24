@@ -1,3 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: gold;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1E1F26; /* Dark gray */
+    border-bottom: 5px solid #4CAF50; /* Green */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav ul li {
+    margin-left: 20px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav ul li a:hover {
+    color: #4CAF50; /* Green hover effect */
+}
+
+.actions .login,
+.actions .start-now {
+    margin-left: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.login {
+    background-color: transparent;
+    color: white;
+    border: 2px solid #4CAF50;
+    transition: background-color 0.3s;
+}
+
+.login:hover {
+    background-color: #4CAF50;
+}
+
+.start-now {
+    background-color: #4CAF50;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.start-now:hover {
+    background-color: #388E3C;
+}
+
+.hero-container {
+    width: 100%;
+    text-align: center;
+}
+
+.hero {
+    margin: 10px auto;
+    position: relative;
+    width: 90%;
+    height: 845px;
+    border-radius: 30px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.motivation-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../Images/motivation-background.jpg') no-repeat center center;
+    background-size: cover;
+    z-index: 1;
+}
+
+.brockne-speaks-background {
+    position: absolute;
+    width: 1300px;
+    bottom: 0;
+    right: -18px;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 30%;
+    left: 5%;
+    z-index: 3;
+    text-align: left;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    color: white;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7); /* Adds contrast */
+}
+
+.cta-button {
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #388E3C; /* Darker green hover effect */
 }
